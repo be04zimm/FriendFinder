@@ -1,0 +1,21 @@
+{
+  "name": "FriendFinder",
+  "version": "1.0.0",
+  "description": "A compatibility-based \"FriendFinder\" application (basically a dating app). This full-stack site will take in results from the users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match. The application utilizes Express to handle routing. The app will be deployed to Heroku so that other users can fill it out.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/be04zimm/FriendFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/be04zimm/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/be04zimm/FriendFinder#readme"
+}
