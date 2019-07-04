@@ -40,8 +40,8 @@ module.exports = function (app) {
         console.log("User Score " + userScores);
         // Converting the users score to a sum number (Adds up all the numbers in array)
         var sum = scores.reduce((a, b) => a + b, 0);
-        console.log("Sum of users score " + sum);
-        console.log("Best match friend diff " + bestMatch.friendDifference);
+        console.log("Sum of user's score " + sum);
+        console.log("Best match friend difference " + bestMatch.friendDifference);
 
 
         console.log("+++++++=================++++++++++");
@@ -51,7 +51,7 @@ module.exports = function (app) {
             console.log(friends[i].name);
             totalDifference = 0;
             console.log("Total Diff " + totalDifference);
-            console.log("Best match friend diff " + bestMatch.friendDifference);
+            console.log("Best match friend difference " + bestMatch.friendDifference);
 
             var friendScore = friends[i].scores.reduce((a, b) => a + b, 0);
             console.log("Total friend score " + friendScore);
