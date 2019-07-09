@@ -8,7 +8,7 @@ module.exports = function (app) {
     app.post('../data/friends', function (req, res) {
 
         var totalDifference = 0;
-        var bestMatch = {
+        var bestFriendMatch = {
             name: "",
             photo: "",
             friendDifference: 1000
@@ -34,7 +34,7 @@ module.exports = function (app) {
 
         var sum = scores.reduce((a, b) => a + b, 0);
         console.log("Sum of user's score " + sum);
-        console.log("Best match friend difference " + bestMatch.friendDifference);
+        console.log("Best match friend difference " + bestFriendMatch.friendDifference);
 
 
         console.log("+++++++=================++++++++++");
@@ -44,7 +44,7 @@ module.exports = function (app) {
             console.log(friends[i].name);
             totalDifference = 0;
             console.log("Total Diff " + totalDifference);
-            console.log("Best match friend difference " + bestMatch.friendDifference);
+            console.log("Best match friend difference " + bestFriendMatch.friendDifference);
 
             var friendScore = friends[i].scores.reduce((a, b) => a + b, 0);
             console.log("Total friend score " + friendScore);
@@ -58,25 +58,25 @@ module.exports = function (app) {
             //     console.log(friends[i].scores[j] + " Friend Scores");
 
             // If the sum of differences is less then the differences of the current "best match"
-            if (totalDifference <= bestMatch.friendDifference) {
+            if (totalDifference <= bestFriendMatch.friendDifference) {
 
                 // Reset the bestMatch to be the new friend. 
-                bestMatch.name = friends[i].name;
-                bestMatch.photo = friends[i].photo;
-                bestMatch.friendDifference = totalDifference;
+                bestFriendMatch.name = friends[i].name;
+                bestFriendMatch.photo = friends[i].photo;
+                bestFriendMatch.friendDifference = totalDifference;
                 // }
 
             }
             console.log("Total Difference is " + totalDifference);
         }
 
-        console.log(bestMatch);
+        console.log(bestFriendMatch);
 
         friends.push(userData);
         console.log("New User Added");
         console.log(userData);
 
-        res.json(bestMatch);
+        res.json(bestFriendMatch);
 
     });
 
