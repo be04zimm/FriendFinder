@@ -1,11 +1,11 @@
 var friends = require('../data/friends.js');
 module.exports = function (app) {
 
-    app.get('/app/data/friends', function (req, res) {
+    app.get('../data/friends', function (req, res) {
         res.json(friends);
     });
 
-    app.post('/app/data/friends', function (req, res) {
+    app.post('../data/friends', function (req, res) {
 
         var totalDifference = 0;
         var bestMatch = {
