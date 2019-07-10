@@ -2,49 +2,46 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
 
-    <link rel="icon" href="data:,">
-    <title>Friend Finder</title>
-    <!-- Latest compiled and minified CSS & JS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-        crossorigin="anonymous"></script>
-    <!-- Font Awesome Glyphicons -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <!-- Font Awesome Glyphicons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="jumbotron">
 
-            <img src="/img/mates.png" class="logo" alt="Mates logo" />
-            <h1 class=""> Find Your Best Friend! </h1>
-            <hr>
-            <h2 class="">Answer 10 questions about yourself, and find out with which of your friends you are most
-                compatible!</h2>
-            <br>
-            <div class="">
-                <a href="/survey">
-                    <button type="button" class="btn btn-lg btn-primary">
-                        <h4><span class="glyphicon glyphicon-list-alt"></span> Go check your Friend Compatibilty!</h4>
-                    </button>
-                </a>
-            </div>
-            <div><a href="../data/friends">Friend List</a></div>
-        </div>
-        <footer class="footer text-center">
-            <div class="container">
-                <p>Best Friend Finder!</p>
-            </div>
-        </footer>
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
+      <hr>
+      <h2>Answer a few basic questions. </h2>
+      <h2>Then find the friend with the greatest compatibility!</h2>
+      <br>
+
+      <div>
+        <a href="/survey"><button class="btn btn-lg btn-primary"><h4><span class="fa fa-list-alt"></span> Go to Survey</h4></button></a>
+      </div>
+
     </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+
 </body>
 
 </html>
